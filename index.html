@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Red Hat Display", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+      }
+      .card-container {
+        background-color: white;
+        border-radius: 15px;
+        width: 400px;
+        margin: 0px 20px;
+        box-shadow: 0px 10px 20px 1px hsla(245, 75%, 52%, 0.055);
+      }
+      .top-container img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .bottom-container {
+        padding: 40px;
+        text-align: center;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+      }
+      .description {
+        padding-top: 20px;
+        color: hsl(224, 23%, 55%);
+      }
+      .price-container {
+        display: flex;
+        background-color: hsl(225, 100%, 98%);
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        align-items: center;
+      }
+      .price-container .icon-container {
+        width: auto;
+      }
+      .price-container .plan-price {
+        flex: 1;
+        text-align: start;
+      }
+      .price-container .change-plan {
+        width: auto;
+      }
+      .change-text:hover {
+        color: hsla(245, 75%, 52%, 0.621);
+      }
+      .proceed-button {
+        padding: 15px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        box-shadow: 0px 10px 20px 1px hsla(245, 75%, 52%, 0.313);
+      }
+      .proceed-button:hover {
+        background-color: hsla(245, 75%, 52%, 0.621);
+      }
+      .cancel-text {
+        font-size: 14px;
+        font-weight: 800;
+        color: hsl(224, 23%, 55%);
+        padding-top: 20px;
+        cursor: pointer;
+      }
+      .cancel-text:hover {
+        color: hsl(223, 47%, 23%);
+      }
+      .plan {
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+      }
+      .price {
+        padding-top: 5px;
+        font-weight: 600;
+        color: hsl(224, 23%, 55%);
+      }
+      .change-plan p {
+        font-size: 14px;
+        font-weight: 800;
+        color: hsl(245, 75%, 52%);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .icon {
+        width: 100%;
+        height: 100%;
+      }
+      .icon img {
+        width: 100%;
+        height: 100%;
+        padding-right: 20px;
+      }
+      @media (max-width: 420px) {
+        .change-plan p {
+          font-size: 12px;
+        }
+        .plan {
+          font-size: 14px;
+        }
+        .price {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card-container">
+          <div class="top-container">
+            <img src="./images/illustration-hero.svg" alt="">
+          </div>
+          <div class="bottom-container">
+            <div class="content-container">
+              <h3 class="title">Order Summary</h3>
+              <p class="description">
+                You can now listen to millions of songs, audiobooks, and
+                podcasts on any device anywhere you like!
+              </p>
+              <div class="price-container">
+                <div class="icon-container">
+                  <div class="icon">
+                    <img src="./images/icon-music.svg" alt="" />
+                  </div>
+                </div>
+                <div class="plan-price">
+                  <div class="plan">Annual Plan</div>
+                  <div class="price">$59.99/year</div>
+                </div>
+                <div class="change-plan"><p class="change-text">Change</p></div>
+              </div>
+              <div class="button-container">
+                <button class="proceed-button">Proceed to Payment</button>
+              </div>
+              <div class="cancel-container">
+                <p class="cancel-text">Cancel Order</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
