@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Ranjeesh0701/Order-Summary-Cart-Component.git)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://ranjeesh0701.github.io/Order-Summary-Cart-Component/)
 
 ## My process
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Meta INfix](https://www.metainfix.com)
+- Website - [Meta Infix](https://www.metainfix.com)
 - Frontend Mentor - [@Ranjeesh0701](https://www.frontendmentor.io/profile/Ranjeesh0701)
